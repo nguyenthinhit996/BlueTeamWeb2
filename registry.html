@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Đăng kí thành viên Blue Team</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/login.css">
+	</head>
+	<body>
+		<div class="row">
+			<div class="container-fluid">
+				<div class="text-center">
+					<img src="assets/img/login.jpg" alt="" width="250" height="250">
+					<h4 class="mb-3 resgistry">ĐĂNG KÍ THÀNH VIÊN</h4>
+				</div>
+				<div class="col-md-12">
+					<form class="needs-validation " novalidate="">
+						<!-- ten truoc ten sau -->
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<label for="firstName">First name</label>
+								<input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+								<div class="invalid-feedback">
+									Valid first name is required.
+								</div>
+							</div>
+							<div class="col-md-6 mb-3">
+								<label for="lastName">Last name</label>
+								<input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+								<div class="invalid-feedback">
+									Valid last name is required.
+								</div>
+							</div>
+						</div>
+						<!-- gio tinh -->
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+							<label class="form-check-label" for="inlineCheckbox1"> Nam </label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" >
+							<label class="form-check-label" for="inlineCheckbox2"> Nữ</label>
+						</div>
+						<!-- ten nguoi dung -->
+						<div class="mb-3">
+							<label for="username">Username</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text">@</span>
+								</div>
+								<input type="text" class="form-control" id="username" placeholder="Username" required="">
+								<div class="invalid-feedback" style="width: 100%;">
+									Your username is required.
+								</div>
+							</div>
+						</div>
+						<!-- email -->
+						<div class="mb-3">
+							<label for="email">Email <span class="text-muted">(Optional)</span></label>
+							<input type="email" class="form-control" id="email" placeholder="you@example.com">
+							<div class="invalid-feedback">
+								Please enter a valid email address for shipping updates.
+							</div>
+						</div>
+						<!-- diachi -->
+						<div class="mb-3">
+							<label for="address">Address</label>
+							<input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+							<div class="invalid-feedback">
+								Please enter your shipping address.
+							</div>
+						</div>
+						<!-- ngay thang nam sinh -->
+						<div class="row">
+							<div class="col-md-2 mb-3">
+								<label for="state">Ngày</label>
+								<select class="custom-select d-block w-100" id="state" required="">
+									<option value="">1</option>
+								</select>
+							</div>
+							<div class="col-md-3 mb-3">
+								<label for="state">Tháng</label>
+								<select class="custom-select d-block w-100" id="state" required="">
+									<option value="">1</option>
+								</select>
+							</div>
+							<div class="col-md-5 mb-3">
+								<label for="country">Năm</label>
+								<select class="custom-select d-block w-100" id="country" required="">
+									<option value="">1960</option>
+								</select>
+								<div class="invalid-feedback">
+									Please select a valid country.
+								</div>
+							</div>
+						</div>
+						<hr class="mb-4">
+						<!-- mat khau -->
+						<div class="mb-3">
+							<label for="address2">Mật Khẩu <span class="text-muted">(Optional)</span></label>
+							<input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+						</div>
+						<!-- nhap lai mat khau -->
+						<div class="mb-3">
+							<label for="address2"> Nhập Lại Mât khẩu <span class="text-muted">(Optional)</span></label>
+							<input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+						</div>
+						<!-- sunbmit -->
+						<button class="btn btn-primary btn-lg btn-block" type="submit">Đăng Kí</button>
+					</form>
+					 <p class="text-center mt-3 text-muted">© TEAM BLUE</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
